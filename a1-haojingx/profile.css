@@ -1,0 +1,301 @@
+[class*="col-"] {
+width: 100%;}
+
+.post_feed {
+    border-color: lightgrey;
+    border-style: dotted;
+    padding: 50px;
+}
+
+.post {
+    background: lightpink;
+    padding: 10px;
+    margin: 15px;
+}
+
+body {
+	background-image: url(6.jpg);
+}
+
+/* Set background image for navigation bar and 
+   keep the navigation bar stay on top */
+nav.nav {
+	background-image: url(back3.jpg);
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	/**/
+	z-index: 10;
+}
+
+ul.nav_bar {
+	display: block;
+	list-style-type: none;
+	background: rgba(0,0,0,0.5);
+	padding: 60px 10px 5px 10px;
+	margin: 0px 0px 0px 0px;
+	overflow: hidden;
+}
+
+ul.nav_bar li {
+	display: inline-block;
+	padding: 20px 10px 10px 10px;
+	margin: 10px 10px 0px 10px;
+}
+
+ul.nav_bar li a {
+	padding: 10px 10px 10px 10px;
+	font-family: verdana;
+	font-weight: bold;
+	text-decoration: none;
+	text-align: center;
+	font-size: 18px;
+	color: red;
+}
+
+ul.nav_bar li a:hover {
+	opacity: 0.8;
+	color: orangered;
+}
+
+ul.nav_bar li.menu {
+	float: right;
+	padding: 10px 10px 0px 0px;
+}
+
+ul.nav_bar li button {
+	padding: 10px 10px 10px 10px;
+	font-family: verdana;
+	font-weight: bold;
+	font-size: 14px;
+	background-color: lavenderblush;
+	border-radius: 12px;
+}
+
+ul.nav_bar li button:hover {
+	opacity: 0.8;
+}
+
+ul.nav_bar li span {
+	padding: 10px 10px 10px 10px;
+	font-family: verdana;
+	font-weight: bold;
+	border-radius: 12px;
+	color: hotpink;
+	font-size: 19px;
+}
+
+/* Always showint without navigation links at first */
+ul.nav_bar li.link1 {
+	display: none;
+}
+
+ul.nav_bar li.link2 {
+	display: none;
+}
+
+/* Set position for profile information section and profile feed section */
+section.profile_info_section {
+	display: block;
+	position: relative;
+	top: 170px;
+	left: 0px;
+}
+
+section.profile_feed_section {
+	display: block;
+	position: relative;
+	top: 260px;
+	left: 0px;
+}
+
+/* Style the photos */
+section.profile_info_section img.cover_photo {
+	border-style: outset;
+	border-color: black;
+	border-width: 10px;
+	height: 60%;
+}
+
+section.profile_info_section img.profile_photo {
+	width: 30%;
+	border-style: outset;
+	border-color: mistyrose;
+	border-width: 5px;
+}
+
+section.profile_info_section p {
+	color: white;
+}
+
+section.profile_info_section p.links a {
+	color: dodgerblue;
+}
+
+section.profile_info_section p.links a:hover {
+	opacity: 0.8;
+	color: lightblue;
+}
+
+section.profile_feed_section h2 {
+	color: white;
+}
+
+/* Screen size in range that is less than 480px */
+@media only screen and (max-width: 480px) {
+
+	/* show navigation links after clicking the menu button */
+	ul.nav_bar.open li {
+		display: block;
+	}
+
+	ul.nav_bar.open li button {
+		position: absolute;
+		right: 30px;
+		top: 80px;
+	}
+
+	/* Set position for profile information section and profile feed section
+	   after clicking menu button */
+	section.profile_info_section.open {
+		display: block;
+		position: relative;
+		top: 310px;
+		left: 0px;
+	}
+
+	section.profile_feed_section.open {
+		display: block;
+		position: relative;
+		top: 400px;
+		left: 0px;
+	}
+}
+
+/* Screen size in range from 480px to 1280px */
+@media only screen and (min-width: 480px) {
+
+	/* show navigation links after clicking the menu button */
+	ul.nav_bar.open li {
+		display: block;
+	}
+
+	ul.nav_bar.open li button {
+		position: absolute;
+		right: 30px;
+		top: 80px;
+	}
+
+	/* Set new position for profile info section and profile feed section */
+	section.profile_info_section{
+		float: left;
+	}
+
+	section.profile_feed_section {
+		top: 150px;
+		float: right;
+	}
+
+	/* Set new position for post buttons */
+	section.profile_feed_section aside.post_buttons {
+		float: right;
+	} 
+
+	/* Set new position after clicking menu button */
+	section.profile_info_section.open {
+		display: block;
+		position: relative;
+		top: 310px;
+		left: 0px;
+	}
+
+	section.profile_feed_section.open {
+		display: block;
+		position: relative;
+		top: 290px;
+		left: 0px;
+	}
+
+	/* Divide the screen into 12 parts for reponsive purpose */
+	.col-m-1 {width:8.33%;}
+	.col-m-2 {width:16.67%;}
+	.col-m-3 {width:25%;}
+	.col-m-4 {width:33.33%;}
+	.col-m-5 {width:41.67%;}
+	.col-m-6 {width:50%;}
+	.col-m-7 {width:58.33%;}
+	.col-m-8 {width:66.67%;}
+	.col-m-9 {width:75%;}
+	.col-m-10 {width:83.33%;}
+	.col-m-11 {width:91.67%;}
+	.col-m-12 {width:100%;}
+}
+
+/* screen size greater than 1280px */
+@media screen and (min-width: 1280px) {
+
+	ul.nav_bar li.logo {
+		display: inline-block;
+	}
+
+	/* show navigation links */
+	ul.nav_bar li.link1 {
+		display: inline-block;
+	}
+
+	ul.nav_bar li.link2 {
+		display: inline-block;
+	}
+
+	/* hide menu button */
+	ul.nav_bar li.menu {
+		display: none;
+	}
+
+	/* Set new position for profile info section and profile feed section */
+	section.profile_info_section{
+		float: left;
+	}
+
+	section.profile_feed_section {
+		top: 150px;
+		float: right;
+	}
+
+	/* Set new position for profile info section and profile feed section after
+	   clicking the menu button */
+	section.profile_info_section.open{
+		top: 170px;
+		float: left;
+	}
+
+	section.profile_feed_section.open {
+		top: 150px;
+		float: right;
+	}
+
+	/* Set new position for post buttons */
+	section.profile_feed_section aside.post_buttons {
+		float: right;
+	} 
+
+	section.profile_info_section article.info_section {
+		float: right;
+		padding-right: 80px;
+	}
+	
+	/* Divide the screen into 12 parts for reponsive purpose */
+	.col-1 {width:8.33%;}
+	.col-2 {width:16.67%;}
+	.col-3 {width:25%;}
+	.col-4 {width:33.33%;}
+	.col-5 {width:41.67%;}
+	.col-6 {width:50%;}
+	.col-7 {width:58.33%;}
+	.col-8 {width:66.67%;}
+	.col-9 {width:75%;}
+	.col-10 {width:83.33%;}
+	.col-11 {width:91.67%;}
+	.col-12 {width:100%;}
+}

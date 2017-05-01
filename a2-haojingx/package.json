@@ -1,0 +1,21 @@
+{
+  "name": "csc309_a2",
+  "version": "1.0.0",
+  "description": "This is the assignment 2 for csc309 at UofT",
+  "main": "server.js",
+  "scripts": {
+    "test": "csc309",
+    "start": "node server.js"
+  },
+  "author": "Hao Jingxi",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "intersect": "^1.0.1",
+    "mongodb": "^2.2.25",
+    "mongodb-autoincrement": "^1.0.1",
+    "mongoose": "^4.9.1",
+    "url": "^0.11.0"
+  }
+}

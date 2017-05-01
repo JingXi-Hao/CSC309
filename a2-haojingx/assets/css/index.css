@@ -1,0 +1,65 @@
+div.web_header {
+	text-align: center;
+	padding-top: 20%; 
+}
+
+#input_for_getting_users {
+	display: none;
+}
+
+#input_id_username_for_getting_user {
+	display: none;
+}
+
+#info_table {
+	display: none;
+}
+
+#input_for_creating_user {
+	display: none;
+}
+
+#input_for_updating_user {
+	display: none;
+}
+
+#input_for_getting_stores {
+	display: none;
+}
+
+#input_for_creating_store {
+	display: none;
+}
+
+#input_id_for_getting_store {
+	display: none;
+}
+
+#input_for_updating_store {
+	display: none;
+}
+
+#input_for_creating_review {
+	display: none;
+}
+
+#input_multi_id_for_getting_review {
+	display: none;
+}
+
+#input_for_updating_review {
+	display: none;
+}
+
+#get_review_by_sid {
+	display: none;
+}
+
+div {
+	margin:5px 10px 5px 10px
+}
+
+
+
+
+

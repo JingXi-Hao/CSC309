@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>CSC309 A1</title>
+        <link rel="stylesheet" href="profile.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+
+        <!-- Navigation Bar Including Logo Section -->
+        <nav class="nav test--nav">
+            <ul class="nav_bar" id="nav_bar">
+                <li class="logo">
+                    <span>JingXi's Profile
+                        <i class="fa fa-file" style="color:pink;">
+                        </i>
+                    </span>
+                </li>
+                <li class="link1"><a href="#info">Profile Information</a></li>
+                <li class="link2"><a href="#feed">Profile Feed</a></li>
+                <li class="menu"><button id="menu_button">Menu</button></li>
+            </ul>
+        </nav>
+        
+        <!-- Profile Information -->
+        <section class="profile_info_section col-m-6 col-6" id="info">
+            <!-- Add cover photo -->
+            <img class="profile_cover_photo test--profile_cover_photo col-m-12 col-12"
+                 alt="cover_photo.jpg"
+                 src="cover_photo.jpg"
+            >
+
+            <!-- Add photo -->
+            <img class="profile_photo test--profile_photo col-m-4 col-4"
+                 alt="profile_photo.jpeg"
+                 src="profile_photo.jpeg"
+            >
+
+            <article class="info_section">
+                <!-- Person's Information-->
+                <p class="profile_name test--profile_name"><b style="color:gold;">Name:</b> JingXi Hao</p>
+                <p class="profile_location test--profile_location"><b style="color:gold;">Location:</b> 386 Yonge Street, Toronto, ON, Canada</p>
+                <p class="profile_hobbies test--profile_hobbies"><b style="color:gold;">Hobbies/Interests:</b> Swimming, Reading, Travelling</p>
+                <p class="profile_bio test--profile_bio"><b style="color:gold;">Blurb/Bio:</b> My name is JingXi, Hao, a junior student<br> majoring in computer science at University of<br> Toronto. Due to the interests, I am enrolling in<br> statistics minor as well.</p>
+
+                <!-- External links -->
+                <p class="links"><b style="color:gold;">Contacts:</b>
+                <a class="profile_links test--profile_links" 
+                   href="mailto:shirley.hao@mail.utoronto.ca">Email Me</a>
+                <a class="profile_links test--profile_links" 
+                   href="https://github.com/JingXi-Hao"
+                   target="_blank">GitHub</a>
+                <a class="profile_links test--profile_links" 
+                   href="https://www.facebook.com/shirleyhao.love"
+                   target="_blank">Facebook</a>
+                <a class="profile_links test--profile_links" 
+                   href="https://www.instagram.com/s.h__99/"
+                   target="_blank">Instagram</a>
+                </p>
+            </article>
+        </section>
+
+        <!-- Profile Feed -->
+        <section class="profile_feed_section col-m-6 col-6" id="feed">
+            <aside class="post_buttons">
+                <input class="input_text test--input_text" type="text">
+                <button type="submit" class="input_button test--input_button">Post</button>
+                <input class="photo_url test--photo_url" type="text">
+                <button type="submit" class="photo_button test--photo_button">Image</button>
+            </aside>
+
+            <h2>All My Posts</h2>
+            <section class="post_feed test--post_feed">
+            </section>
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
+        <script src="profile.js"></script>
+    </body>
+</html>
+
