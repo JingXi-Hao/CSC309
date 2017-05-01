@@ -1,0 +1,21 @@
+div.container{
+	width:100%;
+}
+div.container-header{
+	text-align: center;
+	padding-top: 10%; 
+}
+.container-header h1{
+	font-size: 100px;
+	font-weight: bold;
+}
+
+div#bs-example-navbar-collapse-1{
+	position: absolute;
+	left: 35%;
+}
+div.input-group{
+	position: absolute;
+	left: 65%;
+	width:70%;
+}

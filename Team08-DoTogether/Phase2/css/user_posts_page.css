@@ -1,0 +1,36 @@
+/* Body Part */
+section.posts {
+  margin: 5px 0px 5px 0px;
+}
+
+td {
+  padding: 20px 20px 20px 20px;
+}
+
+h3 {
+  font-family: Verdana;
+  color: dimgray;
+}
+
+div.info {
+  border: 1px solid silver;
+  padding: 5px 5px 5px 5px;
+}
+
+.image {
+  width: 15%;
+}
+
+.post_info {
+  font-family: arial;
+  font-size: 15px;
+  margin: 5px 5px 5px 5px;
+}
+
+.post1.hide {
+  display: none;
+}
+
+.post2.hide {
+  display: none;
+}

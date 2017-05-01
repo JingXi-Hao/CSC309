@@ -1,0 +1,8 @@
+Phase3/node_modules/
+./node_modules/
+node_modules/
+*.DS_Store
+Phase3/my
+*.js~
+*.html~
+*.sh~
