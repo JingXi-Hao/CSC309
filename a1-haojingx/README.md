@@ -17,3 +17,5 @@ Features Implemented:
    responsive. Also, the text posted is automatically broken for too long word.
    
 4. Uses icons for logo and 'likes' button.
+
+NOTE: simple_test.py is given by TA
